@@ -1,0 +1,24 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+@mixin text-3d-glow($color) {
+    text-shadow:
+        0 0 5px rgba($color, 0.8),
+        0 0 10px rgba($color, 0.6),
+        0 0 20px rgba($color, 0.4);
+}
+
+@mixin transition($property: all, $duration: 0.3s) {
+    transition: $property $duration ease-in-out;
+}

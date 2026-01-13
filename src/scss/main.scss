@@ -1,0 +1,10 @@
+@use 'variables';
+@use 'mixins';
+@use 'base';
+
+@use 'components/hero';
+@use 'components/about';
+@use 'components/characters';
+@use 'components/watch';
+@use 'components/faq';
+@use 'components/footer';

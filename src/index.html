@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divertida Mente 2</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero__background">
+            <img src="images/hero-bg.png" alt="Riley's Mind Headquarters" class="hero__image">
+        </div>
+        <div class="hero__content">
+            <h1 class="hero__title" data-text="Divertida Mente 2">Divertida Mente 2</h1>
+            <p class="hero__subtitle">Novas emoções. Nova fase. O mesmo caos.</p>
+            <a href="#watch" class="button hero__cta">Assista Agora</a>
+        </div>
+        <div class="hero__overlay"></div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">A Adolescência Chegou</h2>
+            <div class="about__content">
+                <p class="about__text">
+                    Riley agora é uma adolescente, e o Quartel-General está passando por uma demolição repentina para
+                    dar lugar a algo totalmente inesperado: novas emoções!
+                    Alegria, Tristeza, Raiva, Medo e Nojinho, que vinham administrando uma operação bem-sucedida, não
+                    sabem o que sentir quando a Ansiedade aparece. E parece que ela não está sozinha.
+                </p>
+                <div class="about__tags">
+                    <span class="tag">Animação</span>
+                    <span class="tag">Comédia</span>
+                    <span class="tag">Família</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section class="characters" id="characters">
+        <div class="container">
+            <h2 class="section-title">Conheça as Emoções</h2>
+
+            <nav class="characters__nav">
+                <ul class="characters__menu">
+                    <li class="characters__menu-item characters__menu-item--active" data-tab="emotions">Emoções</li>
+                    <li class="characters__menu-item" data-tab="quotes">Trechos</li>
+                    <li class="characters__menu-item" data-tab="story">História</li>
+                </ul>
+            </nav>
+
+            <!-- Emotions Tab Content -->
+            <div class="characters__content characters__content--active" id="emotions">
+                <div class="characters__grid">
+                    <!-- Original Emotions -->
+                    <div class="character-card character-card--joy">
+                        <div class="character-card__image-wrapper">
+                            <img src="images/joy.png" alt="Alegria" class="character-card__image">
+                        </div>
+                        <div class="character-card__content">
+                            <h3 class="character-card__name">Alegria</h3>
+                            <p class="character-card__desc">Sempre otimista, busca manter Riley feliz a qualquer custo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="character-card character-card--sadness">
+                        <div class="character-card__image-wrapper">
+                            <img src="images/sadness.png" alt="Tristeza" class="character-card__image">
+                        </div>
+                        <div class="character-card__content">
+                            <h3 class="character-card__name">Tristeza</h3>
+                            <p class="character-card__desc">Essencial para o equilíbrio, ajuda a processar as mudanças.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="character-card character-card--anger">
+                        <div class="character-card__image-wrapper">
+                            <img src="images/anger.png" alt="Raiva" class="character-card__image">
+                        </div>
+                        <div class="character-card__content">
+                            <h3 class="character-card__name">Raiva</h3>
+                            <p class="character-card__desc">Garante que tudo seja justo, mesmo que precise explodir.</p>
+                        </div>
+                    </div>
+
+                    <div class="character-card character-card--fear">
+                        <div class="character-card__image-wrapper">
+                            <img src="images/fear.png" alt="Medo" class="character-card__image">
+                        </div>
+                        <div class="character-card__content">
+                            <h3 class="character-card__name">Medo</h3>
+                            <p class="character-card__desc">Mantém Riley segura, avaliando todos os riscos possíveis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="character-card character-card--disgust">
+                        <div class="character-card__image-wrapper">
+                            <img src="images/disgust.png" alt="Nojinho" class="character-card__image">
+                        </div>
+                        <div class="character-card__content">
+                            <h3 class="character-card__name">Nojinho</h3>
+                            <p class="character-card__desc">Evita que Riley seja envenenada, física ou socialmente.</p>
+                        </div>
+                    </div>
+
+                    <!-- New Emotions -->
+                    <div class="character-card character-card--anxiety">
+                        <div class="character-card__image-wrapper">
+                            <div class="character-card__placeholder">?</div>
+                        </div>
+                        <div class="character-card__content">
+                            <h3 class="character-card__name">Ansiedade</h3>
+                            <p class="character-card__desc">Preocupa-se com o futuro e tenta controlar o incontrolável.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="character-card character-card--envy">
+                        <div class="character-card__image-wrapper">
+                            <div class="character-card__placeholder">?</div>
+                        </div>
+                        <div class="character-card__content">
+                            <h3 class="character-card__name">Inveja</h3>
+                            <p class="character-card__desc">Deseja o que os outros têm e motiva a alcançar novos
+                                patamares.</p>
+                        </div>
+                    </div>
+
+                    <div class="character-card character-card--embarrassment">
+                        <div class="character-card__image-wrapper">
+                            <div class="character-card__placeholder">?</div>
+                        </div>
+                        <div class="character-card__content">
+                            <h3 class="character-card__name">Vergonha</h3>
+                            <p class="character-card__desc">Gosta de ficar invisível e evitar situações constrangedoras.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="character-card character-card--ennui">
+                        <div class="character-card__image-wrapper">
+                            <div class="character-card__placeholder">?</div>
+                        </div>
+                        <div class="character-card__content">
+                            <h3 class="character-card__name">Tédio</h3>
+                            <p class="character-card__desc">Indiferente a tudo, traz o sarcasmo adolescente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quotes Tab Content -->
+            <div class="characters__content" id="quotes" style="display: none;">
+                <div class="characters__grid">
+                    <div class="character-card character-card--joy">
+                        <div class="character-card__image-wrapper">
+                            <span style="font-size: 3rem;">✨</span>
+                        </div>
+                        <div class="character-card__content">
+                            <h3 class="character-card__name">Mudança</h3>
+                            <p class="character-card__desc">"Talvez a gente não consiga escolher quem a Riley é." —
+                                Alegria</p>
+                        </div>
+                    </div>
+
+                    <div class="character-card character-card--anxiety">
+                        <div class="character-card__image-wrapper">
+                            <span style="font-size: 3rem;">🎒</span>
+                        </div>
+                        <div class="character-card__content">
+                            <h3 class="character-card__name">Chegada</h3>
+                            <p class="character-card__desc">"Olá! Eu sou a Ansiedade. Onde eu coloco minha bagagem?"</p>
+                        </div>
+                    </div>
+
+                    <div class="character-card character-card--sadness">
+                        <div class="character-card__image-wrapper">
+                            <span style="font-size: 3rem;">💧</span>
+                        </div>
+                        <div class="character-card__content">
+                            <h3 class="character-card__name">Crescer</h3>
+                            <p class="character-card__desc">"Chorar faz eu me acalmar e suportar o peso dos problemas da
+                                vida."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Story Tab Content -->
+            <div class="characters__content" id="story" style="display: none;">
+                <div class="characters__grid">
+                    <div class="character-card character-card--joy">
+                        <div class="character-card__image-wrapper">
+                            <span style="font-size: 3rem;">🎂</span>
+                        </div>
+                        <div class="character-card__content">
+                            <h3 class="character-card__name">O Início</h3>
+                            <p class="character-card__desc">Aos 11 anos, as ilhas de personalidade de Riley eram
+                                simples. Tudo parecia estar sob controle da Alegria.</p>
+                        </div>
+                    </div>
+
+                    <div class="character-card character-card--anger">
+                        <div class="character-card__image-wrapper">
+                            <span style="font-size: 3rem;">🚨</span>
+                        </div>
+                        <div class="character-card__content">
+                            <h3 class="character-card__name">O Alarme</h3>
+                            <p class="character-card__desc">De repente, o alarme da PUBERDADE soa. O painel de controle
+                                muda e tudo vira um caos.</p>
+                        </div>
+                    </div>
+
+                    <div class="character-card character-card--anxiety">
+                        <div class="character-card__image-wrapper">
+                            <span style="font-size: 3rem;">🏒</span>
+                        </div>
+                        <div class="character-card__content">
+                            <h3 class="character-card__name">Novos Desafios</h3>
+                            <p class="character-card__desc">No acampamento de hóquei, Riley tenta se enturmar, mas a
+                                Ansiedade assume o comando para "protegê-la".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Watch Section -->
+    <section class="watch" id="watch">
+        <div class="watch__background"></div>
+        <div class="container">
+            <h2 class="section-title">Onde Assistir</h2>
+            <div class="watch__content">
+                <p>Mergulhe na mente de Riley. Disponível nos cinemas e em breve no Disney+.</p>
+                <div class="watch__actions">
+                    <a href="#" class="button button--primary">Disney+</a>
+                    <a href="#" class="button button--outline">Ver Trailer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq__grid">
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Quais são as novas emoções em Divertida Mente 2?</h3>
+                        <span class="faq__icon">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p>No novo filme, Riley conhece a Ansiedade (Laranja), Inveja (Azul-petróleo), Tédio (Roxo
+                            Escuro) e Vergonha (Rosa), que chegam para bagunçar o quartel-general durante a puberdade.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Onde posso assistir ao filme?</h3>
+                        <span class="faq__icon">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Divertida Mente 2 está disponível nos cinemas e em breve chegará exclusivamente ao catálogo
+                            do Disney+.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Qual a classificação indicativa?</h3>
+                        <span class="faq__icon">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p>O filme é livre para todos os públicos, sendo uma ótima opção para assistir com toda a
+                            família e discutir sobre sentimentos.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>A Alegria ainda é a líder?</h3>
+                        <span class="faq__icon">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Alegria tenta manter o controle, mas a chegada da Ansiedade desafia sua liderança, criando um
+                            conflito sobre qual é a melhor forma de cuidar de Riley.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Disney/Pixar. Todos os direitos reservados.</p>
+            <ul class="footer__links">
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
