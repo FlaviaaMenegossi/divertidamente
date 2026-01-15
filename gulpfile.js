@@ -59,6 +59,8 @@ exports.minifyJs = minifyJs;
 exports.optimizeImages = optimizeImages;
 exports.copyFavicon = copyFavicon;
 
+exports.build = gulp.parallel(minifyHtml, minifyJs, optimizeImages, style, copyFavicon);
+
 exports.default = gulp.series(
     gulp.parallel(minifyHtml, minifyJs, optimizeImages, style, copyFavicon),
     watch
