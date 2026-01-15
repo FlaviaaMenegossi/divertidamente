@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#333" stroke-width="2" />
+  <path d="M50,5 A45,45 0 0,1 95,50 L50,50 Z" fill="#fdf592" /> <!-- Joy -->
+  <path d="M95,50 A45,45 0 0,1 50,95 L50,50 Z" fill="#5db7e8" /> <!-- Sadness -->
+  <path d="M50,95 A45,45 0 0,1 5,50 L50,50 Z" fill="#e83a3a" /> <!-- Anger -->
+  <path d="M5,50 A45,45 0 0,1 50,5 L50,50 Z" fill="#a078b8" /> <!-- Fear -->
+  <circle cx="50" cy="50" r="20" fill="#e88d3a" /> <!-- Anxiety / Center -->
+</svg>

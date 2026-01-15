@@ -25,6 +25,12 @@ function watch() {
     gulp.watch('./src/js/**/*.js').on('change', minifyJs);
     gulp.watch('./dist/js/**/*.js').on('change', browserSync.reload);
     gulp.watch('./src/images/**/*', optimizeImages);
+    gulp.watch('./src/favicon.svg', copyFavicon);
+}
+
+function copyFavicon() {
+    return gulp.src('./src/favicon.svg')
+        .pipe(gulp.dest('./dist'));
 }
 
 function minifyHtml() {
@@ -51,8 +57,9 @@ exports.watch = watch;
 exports.minifyHtml = minifyHtml;
 exports.minifyJs = minifyJs;
 exports.optimizeImages = optimizeImages;
+exports.copyFavicon = copyFavicon;
 
 exports.default = gulp.series(
-    gulp.parallel(minifyHtml, minifyJs, optimizeImages, style),
+    gulp.parallel(minifyHtml, minifyJs, optimizeImages, style, copyFavicon),
     watch
 );
